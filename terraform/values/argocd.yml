@@ -1,0 +1,7 @@
+---
+configs:
+  params:
+    server.insecure: true
+global:
+  image:
+    tag: "v3.0.23"

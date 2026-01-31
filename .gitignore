@@ -1,0 +1,5 @@
+.terraform
+*.state
+*.state.*
+*.plan
+plan.out
