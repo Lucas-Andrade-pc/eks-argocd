@@ -1,0 +1,11 @@
+kind: ConfigMap
+apiVersion: v1
+metadata:
+  name: {{ .Values.configmap.name }}
+data:
+  PROFILE: {{ .Values.configmap.PROFILE }}
+  APPLICATION: {{ .Values.configmap.APPLICATION }}
+  SPRING_CONFIG_IMPORT: {{ .Values.configmap.SPRING_CONFIG_IMPORT }}
+  AWS_ACCESS_KEY_ID: {{ .Values.configmap.AWS_ACCESS_KEY_ID }}
+  AWS_SECRET_ACCESS_KEY: {{ .Values.configmap.AWS_SECRET_ACCESS_KEY }}
+  AWS_REGION: {{ .Values.configmap.AWS_REGION }}

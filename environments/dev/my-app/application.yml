@@ -30,6 +30,20 @@ spec:
         value: '/health'
       - name: image.tag
         value: 0.1.0
+      - name: configmap.name
+        value: configmap-test
+      - name: configmap.PROFILE
+        value: staging
+      - name: configmap.APPLICATION
+        value: production
+      - name: configmap.SPRING_CONFIG_IMPORT
+        value: aws-secretsmanager:k8s/myapp/
+      - name: configmap.AWS_ACCESS_KEY_ID
+        value: AKIACDAEAGO5DPZASIAC
+      - name: configmap.AWS_SECRET_ACCESS_KEY
+        value: rH4tj1lmJCSbnTsacbcdlXfbgkas6YvMYcRLpN2j+g
+      - name: configmap.AWS_REGION
+        value: us-east-1         
   syncPolicy:
     automated:
       allowEmpty: false

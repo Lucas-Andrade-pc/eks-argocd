@@ -159,3 +159,12 @@ nodeSelector: {}
 tolerations: []
 
 affinity: {}
+
+configmap:
+  name: ''
+  PROFILE: ''
+  APPLICATION: ''
+  SPRING_CONFIG_IMPORT: ''
+  AWS_ACCESS_KEY_ID: ''
+  AWS_SECRET_ACCESS_KEY: ''
+  AWS_REGION: '' 
