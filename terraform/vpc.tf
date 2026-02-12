@@ -40,7 +40,7 @@ resource "aws_subnet" "public_zone" {
 
   tags = {
     "Name"                                                 = "${local.env}-public-${var.zones[count.index]}"
-    "kubernetes.io/role/internal-elb"                      = "1"
+    "kubernetes.io/role/elb"                               = "1"
     "kubernetes.io/cluster/${local.env}-${local.eks_name}" = "owned"
   }
 }
